@@ -1,36 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+  <title>Article preview component | VIMP</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+
+  <link rel="stylesheet" href="./styles/main.css">
+
+  <script src="./scripts/main.js" defer></script>
+
 </head>
+
 <body>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  <main>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
+    <article class="preview">
+      <div class="preview__media">
+        <img src="./assets/images/hero/drawers.jpg" alt="Decorated green dresser in a living room">
+      </div>
 
-  Michelle Appleton
-  28 Jun 2020
+      <div class="preview__body">
+        <div class="preview__content">
+          <h1 class="preview__title">
+            Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home
+          </h1>
+          <p class="preview__description">
+            Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I’ve got some simple tips
+            to help you make any room feel complete.
+          </p>
+        </div>
 
-  Share
-  
+        <footer class="preview__footer">
+          <div class="preview__author">
+            <img src="./assets/images/avatars/michelle.jpg" alt="Michelle Appleton" class="preview__avatar">
+
+            <div class="preview__author-content">
+              <p class="preview__author-name">Michelle Appleton</p>
+              <time datetime="2020-06-28" class="preview__publish-date">28 Jun 2020</time>
+            </div>
+          </div>
+
+          <div class="preview__share">
+            <button type="button" class="preview__share-button" aria-label="Share article" aria-expanded="false"
+              aria-controls="share-panel">
+              <svg class="preview__share-icon" aria-hidden="true">
+                <use href="./assets/images/icons/sprites/ui.svg#share"></use>
+              </svg>
+            </button>
+
+            <div id="share-panel" class="share-panel" hidden>
+              <span class="share-panel__label">Share</span>
+              <ul class="share-panel__social-list">
+                <li class="share-panel__item">
+                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Share on Facebook (opens in a new tab)" class="share-panel__link">
+                    <svg class="share-panel__icon" aria-hidden="true">
+                      <use href="./assets/images/icons/sprites/social.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="share-panel__item">
+                  <a href="https://x.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Share on X (opens in a new tab)" class="share-panel__link">
+                    <svg class="share-panel__icon" aria-hidden="true">
+                      <use href="./assets/images/icons/sprites/social.svg#xtwitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="share-panel__item">
+                  <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer"
+                    aria-label="Share on Pinterest (opens in a new tab)" class="share-panel__link">
+                    <svg class="share-panel__icon" aria-hidden="true">
+                      <use href="./assets/images/icons/sprites/social.svg#pinterest"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </article>
+
+  </main>
+
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank" rel="noopener noreferrer"
+      class="attribution__link">Frontend Mentor</a> – Coded by <a href="https://www.frontendmentor.io/profile/vimpdev"
+      target="_blank" rel="noopener noreferrer" class="attribution__link">VIMP</a>
   </footer>
 </body>
+
 </html>
