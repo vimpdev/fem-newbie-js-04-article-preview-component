@@ -1,0 +1,50 @@
+@layer tokens {
+
+  :root {
+    --color-white: #FFFFFF;
+    --color-gray-900: #48556A;
+    --color-gray-500: #66788F;
+    --color-gray-400: #5C7A93;
+    --color-gray-200: #ECF2F8;
+
+    --space-0: 0;
+    --space-200: 1rem;
+    --space-300: 1.5rem;
+    --space-400: 2rem;
+    --space-500: 2.5rem;
+    --space-600: 3rem;
+    --space-700: 3.5rem;
+    --space-800: 4rem;
+    --space-1300: 6.5rem;
+    --space-2000: 10rem;
+
+    --color-text-heading: var(--color-gray-900);
+    --color-text-body: var(--color-gray-500);
+    --color-text-muted: var(--color-gray-400);
+    --color-text-inverse: var(--color-white);
+
+    --color-surface-page: var(--color-gray-200);
+    --color-surface-card: var(--color-white);
+    --color-surface-tooltip: var(--color-gray-900);
+    --color-surface-action: var(--color-gray-200);
+    --color-surface-action-interactive: var(--color-gray-500);
+
+    --ff-base: 'Manrope', system-ui, sans-serif;
+
+    --fs-base: 1rem;
+    --fs-heading: 1.25rem;
+    --fs-body: 0.8125rem;
+    --fs-caption: 0.73rem;
+
+    --fw-medium: 500;
+    --fw-bold: 700;
+
+    --shadow-card: 0 2.5rem 2.5rem -0.625rem color-mix(in srgb, #C9D5E1 50%, transparent);
+    --shadow-tooltip: 0 0.625rem 0.625rem color-mix(in srgb, #C9D5E1 50%, transparent);
+
+    --radius-card: 0.625rem;
+    --radius-full: 50%;
+
+    --transition-fast: .25s ease;
+  }
+}
